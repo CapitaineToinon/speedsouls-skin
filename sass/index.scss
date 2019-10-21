@@ -1,0 +1,35 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .speedsouls {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+
+    &_left {
+      min-width: 300px;
+      background-color: $beige-lighter;
+      height: calc(100vh - #{$navbar-height});
+      overflow-y: scroll;
+      padding: $gap / 2;
+    }
+
+    &_page {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      height: calc(100vh - #{$navbar-height});
+      overflow-y: scroll;
+      
+      .body {
+        flex-grow: 1;
+      }
+    }
+  }
+}

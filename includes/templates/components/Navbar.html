@@ -1,0 +1,26 @@
+<nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="{{ logo.href }}">
+      <img src="{{ logo.src }}" width="{{ logo.width }}" height="{{ logo.height }}">
+    </a>
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarSpeedSouls">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarSpeedSouls" class="navbar-menu">
+    <div class="navbar-start">
+      {% if navbarStart is defined %}
+        {{ navbarStart | raw }}
+      {% endif %}
+    </div>
+    <div class="navbar-end">
+      {% if navbarEnd is defined %}
+        {{ navbarEnd | raw }}
+      {% endif %}
+    </div>
+  </div>
+</nav>

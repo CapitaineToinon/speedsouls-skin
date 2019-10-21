@@ -1,0 +1,35 @@
+{
+	"name": "SpeedSouls",
+	"author": "CapitaineToinon",
+	"url": "https://www.mediawiki.org/wiki/Skin:FooBar",
+	"descriptionmsg": "speedsouls-desc",
+	"namemsg": "skinname-speedsouls",
+	"license-name": "GPL-2.0+",
+	"type": "skin",
+  "ValidSkinNames": {
+		"speedsouls": "SpeedSouls"
+	},
+	"AutoloadClasses": {
+		"SkinSpeedSouls": "includes/SpeedSouls.skin.php",
+    "SpeedSoulsTemplate": "includes/SpeedSoulsTemplate.php"
+  },
+	"MessagesDirs": {
+		"SpeedSouls": "i18n"
+  },
+  "ResourceModules": {
+		"skins.speedsouls": {
+      "styles": {
+        "css/styles.css": { "media": "screen" }
+      }
+    },
+    "skins.speedsouls.js": {
+      "scripts" : [
+        "js/navbar.js"
+      ]
+    }
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "SpeedSouls"
+	}
+}

@@ -1,0 +1,13 @@
+{{ htmlHeader|raw }}
+{{ htmlNavbar|raw }}
+<main class="speedsouls">
+  <aside class="speedsouls_left">
+    {{ htmlLeftMenu|raw }}
+  </aside>
+  <div class="speedsouls_page">
+    {{ htmlBody|raw }}
+    {{ htmlFooter|raw }}
+  </div>
+</main>
+{# Have to close body and html from $this->get('headelement') #}
+{{ htmlEnd|raw }}
